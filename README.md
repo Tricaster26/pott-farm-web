@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
+## How to run the server
 
 First, run the development server:
+
+
 
 ```bash
 npm run dev
@@ -12,6 +12,27 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
+
+If npm is not installed:
+
+## Mac OS
+```
+brew install node
+# and
+brew install npm
+```
+
+## Windows
+
+Download [node.js](https://nodejs.org/en/download/package-manager) and follow the steps listed
+
+## Running te server
+
+Then run 
+
+```
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
