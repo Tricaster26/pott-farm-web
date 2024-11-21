@@ -1,0 +1,36 @@
+.main-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  height: 2000px;
+  width: 100%;
+  background-image: url("../public/Logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-clip: content-box;
+}
+
+.page-title-wrapper {
+  background-image: linear-gradient(
+    to right,
+    rgb(192, 191, 191),
+    rgb(221, 221, 221)
+  );
+  height: 100px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  align-items: center;
+  box-shadow: 0px 10px 15px white;
+
+  .page-title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: aliceblue;
+  }
+}
