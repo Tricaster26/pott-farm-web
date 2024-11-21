@@ -2,7 +2,9 @@
 
 First, run the development server:
 
-
+```
+npm install
+```
 
 ```bash
 npm run dev
@@ -29,10 +31,16 @@ Download [node.js](https://nodejs.org/en/download/package-manager) and follow th
 
 ## Running te server
 
-Then run 
+Then run :
 
 ```
+npm install
+```
 
+followed by:
+
+```
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
