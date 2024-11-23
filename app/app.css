@@ -1,8 +1,7 @@
 .main-page {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: top;
+  flex-direction: column;
+  align-items: center;
   height: 2000px;
   width: 100%;
   background-image: url("../public/Logo.jpg");
@@ -15,22 +14,50 @@
 .page-title-wrapper {
   background-image: linear-gradient(
     to right,
-    rgb(192, 191, 191),
+    rgb(150, 150, 150),
     rgb(221, 221, 221)
   );
-  height: 100px;
+  height: 75px;
   width: 100%;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: black;
   align-items: center;
   box-shadow: 0px 10px 15px white;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  .title-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .logo-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border-width: 3px;
+    border-color: white;
+  }
 
   .page-title {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     font-family: sans-serif;
     color: aliceblue;
   }
+  .other-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+}
+
+.quote-container {
+  width: 300px;
+  margin-top: 100px;
+  color: black;
+  font-size: 20px;
 }
