@@ -51,7 +51,9 @@
   .other-links-wrapper {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    max-width: 600px;
+    width: 100%;
+    overflow: hidden;
     font-size: 20px;
   }
 }
