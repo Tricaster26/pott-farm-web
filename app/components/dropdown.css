@@ -39,6 +39,9 @@
   font-weight: 500;
   transition: color 0.5s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .title-text-selected {

@@ -1,6 +1,11 @@
 import "./app.css";
 import DropdownList from "./components/DropdownList";
 import Title from "./components/title";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdOutlineForum } from "react-icons/md";
+import { MdLiveTv } from "react-icons/md";
+import { BsInfoCircle } from "react-icons/bs";
+
 const Home = () => {
   return (
     <div className="main-page">
@@ -14,10 +19,30 @@ const Home = () => {
         </div>
 
         <div className="other-links-wrapper">
-          <DropdownList title="About" />
-          <DropdownList title="Forum" />
-          <DropdownList title="Episodes" />
-          <DropdownList title="Contact" />
+          <DropdownList>
+            <div className="pb-1">
+              <BsInfoCircle />
+            </div>
+            About
+          </DropdownList>
+
+          <DropdownList>
+            <MdOutlineForum size={25} /> Forum
+          </DropdownList>
+
+          <DropdownList>
+            <div className="pb-1">
+              <MdLiveTv size={25} />
+            </div>
+            Episodes
+          </DropdownList>
+
+          <DropdownList>
+            <div className="pb-1">
+              <FaPhoneAlt />
+            </div>
+            Contact
+          </DropdownList>
         </div>
       </div>
 

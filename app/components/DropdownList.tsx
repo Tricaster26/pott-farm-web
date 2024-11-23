@@ -1,13 +1,13 @@
 "use client";
 
 import "./dropdown.css";
-import { FC, useState } from "react";
+import { FC, ReactNode, useState } from "react";
 
 type DropdownListType = {
-  title: string;
+  children: ReactNode[] | ReactNode;
 };
 
-const DropdownList: FC<DropdownListType> = ({ title }) => {
+const DropdownList: FC<DropdownListType> = ({ children }) => {
   const [showAbout, setShowAbout] = useState(false);
   return (
     <div
@@ -16,7 +16,7 @@ const DropdownList: FC<DropdownListType> = ({ title }) => {
     >
       <div className={`title-wrapper  ${showAbout && "title-selected"}`}>
         <label className={`title ${showAbout && "title-text-selected"}`}>
-          {title}
+          {children}
         </label>
       </div>
 
