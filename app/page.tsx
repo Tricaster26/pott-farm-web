@@ -1,6 +1,6 @@
 import "./app.css";
-
-export default function Home() {
+import DropdownList from "./components/DropdownList";
+const Home = () => {
   return (
     <div className="main-page">
       <div className="page-title-wrapper">
@@ -15,10 +15,10 @@ export default function Home() {
         </div>
 
         <div className="other-links-wrapper">
-          <label>About</label>
-          <label>Contact</label>
-          <label>Episodes</label>
-          <label>Forum</label>
+          <DropdownList title="About" />
+          <DropdownList title="Forum" />
+          <DropdownList title="Episodes" />
+          <DropdownList title="Contact" />
         </div>
       </div>
 
@@ -32,4 +32,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;
