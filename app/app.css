@@ -58,9 +58,8 @@
 
 .quote-container {
   background-image: linear-gradient(
-    to right,
-    rgba(43, 43, 43, 0.3),
-    rgb(221, 221, 221, 0.3)
+    rgba(251, 251, 251, 0.4),
+    rgba(104, 104, 104, 0.4)
   );
   max-width: 500px;
   width: 100%;
