@@ -23,10 +23,10 @@ const DropdownList: FC<DropdownListType> = ({ title }) => {
       <div className={showAbout ? "reveal-list" : "hide-list"}>
         <div className="list-container">
           <div className="element-container">
-            <label className="p-5">The Podcast</label>
+            <label className="p-5 element-text">The Podcast</label>
           </div>
           <div className="element-container">
-            <label className="p-5">The Podcast</label>
+            <label className="p-5 element-text">The Podcast</label>
           </div>
         </div>
       </div>
