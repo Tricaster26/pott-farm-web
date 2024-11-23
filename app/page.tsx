@@ -26,7 +26,8 @@ export default function Home() {
         <p className="quote-text">
           In the beginning was nothing at all, then nothingness plus infinity,
           statistically, made something! A flash dilated into time, now here we
-          are! We were created and can never be destroyed! What joy!
+          are! We were created and can never be destroyed!{" "}
+          <label className="text-[#f5f5f5]">What joy!</label>
         </p>
       </div>
     </div>
