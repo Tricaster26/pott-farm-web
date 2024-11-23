@@ -1,5 +1,6 @@
 import "./app.css";
 import DropdownList from "./components/DropdownList";
+import Title from "./components/title";
 const Home = () => {
   return (
     <div className="main-page">
@@ -8,10 +9,8 @@ const Home = () => {
           <div className="logo-container">
             <img className="rounded-full" src={"./Logo.jpg"}></img>
           </div>
-          <span className="page-title">
-            <label className="text-[#ffffff]">Pott</label>{" "}
-            <label className="text-[#535252]">Farm</label>
-          </span>
+
+          <Title />
         </div>
 
         <div className="other-links-wrapper">
