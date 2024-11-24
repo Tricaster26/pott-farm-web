@@ -1,0 +1,23 @@
+.quote-container {
+  max-width: 500px;
+  width: 100%;
+  font-style: italic;
+  margin-top: 200px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hide-quote {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 5s, opacity 2s;
+}
+
+.show-quote {
+  max-height: 100%;
+  opacity: 1;
+  transition: max-height 5s, opacity 2s;
+}

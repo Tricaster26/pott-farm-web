@@ -58,21 +58,6 @@
   }
 }
 
-.quote-container {
-  background-image: linear-gradient(
-    rgba(251, 251, 251, 0.4),
-    rgba(104, 104, 104, 0.4)
-  );
-  max-width: 500px;
-  width: 100%;
-  font-style: italic;
-  margin-top: 200px;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  padding: 20px;
-  border-radius: 20px;
-
-  .quote-text {
-    font-weight: bold;
-  }
+.quote-text {
+  font-weight: bold;
 }

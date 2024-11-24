@@ -5,6 +5,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineForum } from "react-icons/md";
 import { MdLiveTv } from "react-icons/md";
 import { BsInfoCircle } from "react-icons/bs";
+import QuoteBox from "./components/QuoteBox";
 
 const Home = () => {
   return (
@@ -46,14 +47,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="quote-container">
+      <QuoteBox>
         <p className="quote-text">
           In the beginning was nothing at all, then nothingness plus infinity,
           statistically, made something! A flash dilated into time, now here we
           are! We were created and can never be destroyed!{" "}
           <label className="text-[#f5f5f5]">What joy!</label>
         </p>
-      </div>
+      </QuoteBox>
     </div>
   );
 };
