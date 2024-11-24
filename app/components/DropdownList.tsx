@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import "./dropdown.css";
 import { FC, ReactNode, useState } from "react";
 
@@ -15,9 +16,12 @@ const DropdownList: FC<DropdownListType> = ({ children }) => {
       onMouseLeave={() => setShowAbout(false)}
     >
       <div className={`title-wrapper  ${showAbout && "title-selected"}`}>
-        <label className={`title ${showAbout && "title-text-selected"}`}>
+        <Link
+          href={"/about"}
+          className={`title ${showAbout && "title-text-selected"}`}
+        >
           {children}
-        </label>
+        </Link>
       </div>
 
       <div className={showAbout ? "reveal-list" : "hide-list"}>

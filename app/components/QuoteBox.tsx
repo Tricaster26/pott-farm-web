@@ -3,11 +3,15 @@
 import { FC, ReactNode, useEffect, useState } from "react";
 import "./quote-box.css";
 
-type QuoteBoxType = {
+type AnimatedContainerType = {
   children: ReactNode[] | ReactNode;
+  customClass?: string;
 };
 
-const QuoteBox: FC<QuoteBoxType> = ({ children }) => {
+const AnimatedContainer: FC<AnimatedContainerType> = ({
+  children,
+  customClass,
+}) => {
   const [showQuote, setShowQuote] = useState(false);
 
   useEffect(() => {
@@ -16,13 +20,16 @@ const QuoteBox: FC<QuoteBoxType> = ({ children }) => {
       clearTimeout(timeout);
     }, 500);
   }, []);
+
   return (
     <div
-      className={`quote-container ${showQuote ? "show-quote" : "hide-quote"}`}
+      className={`quote-container ${customClass} ${
+        showQuote ? "show-quote" : "hide-quote"
+      } `}
     >
       {children}
     </div>
   );
 };
 
-export default QuoteBox;
+export default AnimatedContainer;

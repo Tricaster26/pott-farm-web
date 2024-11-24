@@ -9,11 +9,13 @@
 .style-a {
   color: #535252;
   transition: color 1s;
+  cursor: pointer;
 }
 
 .style-b {
   color: white;
   transition: color 1s;
+  cursor: pointer;
 }
 
 .other-links-wrapper {

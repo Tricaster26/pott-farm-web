@@ -1,0 +1,16 @@
+.about-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 2000px;
+  width: 100%;
+  background-image: linear-gradient(rgb(5, 39, 30), rgb(50, 50, 50));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-clip: content-box;
+}
+
+.animated-class {
+  max-width: 100%;
+}
