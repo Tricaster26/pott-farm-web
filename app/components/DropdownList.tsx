@@ -6,9 +6,10 @@ import { FC, ReactNode, useState } from "react";
 
 type DropdownListType = {
   children: ReactNode[] | ReactNode;
+  link?: string;
 };
 
-const DropdownList: FC<DropdownListType> = ({ children }) => {
+const DropdownList: FC<DropdownListType> = ({ children, link }) => {
   const [showAbout, setShowAbout] = useState(false);
   return (
     <div
@@ -17,7 +18,7 @@ const DropdownList: FC<DropdownListType> = ({ children }) => {
     >
       <div className={`title-wrapper  ${showAbout && "title-selected"}`}>
         <Link
-          href={"/about"}
+          href={`/${link}`}
           className={`title ${showAbout && "title-text-selected"}`}
         >
           {children}

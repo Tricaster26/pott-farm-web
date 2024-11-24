@@ -23,25 +23,25 @@ const Header: FC = () => {
       </Link>
 
       <div className="other-links-wrapper">
-        <DropdownList>
+        <DropdownList link="about">
           <div className="pb-1">
             <BsInfoCircle />
           </div>
           About
         </DropdownList>
 
-        <DropdownList>
+        <DropdownList link="forum">
           <MdOutlineForum size={25} /> Forum
         </DropdownList>
 
-        <DropdownList>
+        <DropdownList link="episodes">
           <div className="pb-1">
             <MdLiveTv size={25} />
           </div>
           Episodes
         </DropdownList>
 
-        <DropdownList>
+        <DropdownList link="contact">
           <div className="pb-1">
             <FaPhoneAlt />
           </div>
