@@ -4,6 +4,7 @@
   font-family: sans-serif;
   color: aliceblue;
   transition: color 2s;
+  cursor: pointer;
 }
 
 .style-a {
@@ -26,6 +27,7 @@
 }
 
 .extra-title {
+  cursor: pointer;
   @media (max-width: 610px) {
     display: none;
   }
