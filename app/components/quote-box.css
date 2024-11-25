@@ -1,5 +1,5 @@
 .quote-container {
-  max-width: 500px;
+  max-width: 520px;
   width: 100%;
   font-style: italic;
   margin-top: 200px;
@@ -7,6 +7,8 @@
   font-size: 30px;
   border-radius: 20px;
   overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .hide-quote {

@@ -24,3 +24,9 @@
   width: 40%;
   font-size: 20px;
 }
+
+.extra-title {
+  @media (max-width: 610px) {
+    display: none;
+  }
+}

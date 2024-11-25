@@ -3,6 +3,11 @@
   overflow: hidden;
   max-height: 200px;
   transition: max-height 1s;
+  min-width: 155px;
+  @media (max-width: 1040px) {
+    min-width: 75px;
+    justify-content: center;
+  }
 }
 
 .hide-list {
@@ -10,12 +15,20 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s;
+  min-width: 155px;
+  @media (max-width: 1040px) {
+    min-width: 75px;
+    justify-content: center;
+  }
 }
 
 .element-container {
   padding-top: 5px;
   padding-bottom: 5px;
   cursor: pointer;
+  @media (max-width: 1040px) {
+    padding-left: 9px;
+  }
 }
 
 .element-text {
@@ -59,6 +72,10 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.5s, border 0.5s ease-in;
+  @media (max-width: 1040px) {
+    width: 75px;
+    justify-content: center;
+  }
 }
 
 .title-selected {

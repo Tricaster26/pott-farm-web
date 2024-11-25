@@ -1,6 +1,6 @@
-"use-client";
+"use client";
 
-import "./header.css";
+import "./header.scss";
 
 import DropdownList from "./DropdownList";
 import Title from "./title";
@@ -27,25 +27,26 @@ const Header: FC = () => {
           <div className="pb-1">
             <BsInfoCircle />
           </div>
-          About
+          <label className="title-text">About</label>
         </DropdownList>
 
-        <DropdownList link="forum">
-          <MdOutlineForum size={25} /> Forum
+        <DropdownList link="forum" hidelist>
+          <MdOutlineForum size={25} />{" "}
+          <label className="title-text">Forum</label>
         </DropdownList>
 
         <DropdownList link="episodes">
           <div className="pb-1">
             <MdLiveTv size={25} />
           </div>
-          Episodes
+          <label className="title-text">Episodes</label>
         </DropdownList>
 
-        <DropdownList link="contact">
+        <DropdownList link="contact" hidelist>
           <div className="pb-1">
             <FaPhoneAlt />
           </div>
-          Contact
+          <label className="title-text">Contact</label>
         </DropdownList>
       </div>
     </div>
