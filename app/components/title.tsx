@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import "./title.scss";
 import { FC, useState } from "react";
 
