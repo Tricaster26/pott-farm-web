@@ -2,24 +2,33 @@
 
 import Link from "next/link";
 import "./dropdown.scss";
-import { FC, ReactNode, useState } from "react";
+import { FC, MouseEventHandler, ReactNode, useState } from "react";
 
 type DropdownListType = {
   children: ReactNode[] | ReactNode;
   link?: string;
   hidelist?: boolean;
+  isSelected?: boolean;
+  onClick?: MouseEventHandler<HTMLAnchorElement> | undefined;
 };
 
-const DropdownList: FC<DropdownListType> = ({ children, link, hidelist }) => {
+const DropdownList: FC<DropdownListType> = ({
+  children,
+  link,
+  hidelist,
+  isSelected,
+  onClick,
+}) => {
   const [showAbout, setShowAbout] = useState(false);
+  const showColor = showAbout || isSelected;
   return (
-    <Link href={`/${link}`}>
+    <Link href={`/${link}`} onClick={onClick}>
       <div
         onMouseEnter={() => setShowAbout(true)}
         onMouseLeave={() => setShowAbout(false)}
       >
-        <div className={`title-wrapper  ${showAbout && "title-selected"}`}>
-          <div className={`title ${showAbout && "title-text-selected"}`}>
+        <div className={`title-wrapper  ${showColor && "title-selected"}`}>
+          <div className={`title ${showColor && "title-text-selected"}`}>
             {children}
           </div>
         </div>
