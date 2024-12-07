@@ -16,6 +16,10 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-image: linear-gradient(rgb(5, 39, 30), rgb(50, 50, 50));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-clip: content-box;
   font-family: Arial, Helvetica, sans-serif;
 }

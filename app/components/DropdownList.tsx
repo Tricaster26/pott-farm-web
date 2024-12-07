@@ -13,31 +13,30 @@ type DropdownListType = {
 const DropdownList: FC<DropdownListType> = ({ children, link, hidelist }) => {
   const [showAbout, setShowAbout] = useState(false);
   return (
-    <div
-      onMouseEnter={() => setShowAbout(true)}
-      onMouseLeave={() => setShowAbout(false)}
-    >
-      <div className={`title-wrapper  ${showAbout && "title-selected"}`}>
-        <Link
-          href={`/${link}`}
-          className={`title ${showAbout && "title-text-selected"}`}
-        >
-          {children}
-        </Link>
-      </div>
-      {!hidelist && (
-        <div className={showAbout ? "reveal-list" : "hide-list"}>
-          <div className="list-container">
-            <div className="element-container">
-              <label className="p-5 element-text">A</label>
-            </div>
-            <div className="element-container">
-              <label className="p-5 element-text">B</label>
-            </div>
+    <Link href={`/${link}`}>
+      <div
+        onMouseEnter={() => setShowAbout(true)}
+        onMouseLeave={() => setShowAbout(false)}
+      >
+        <div className={`title-wrapper  ${showAbout && "title-selected"}`}>
+          <div className={`title ${showAbout && "title-text-selected"}`}>
+            {children}
           </div>
         </div>
-      )}
-    </div>
+        {!hidelist && (
+          <div className={showAbout ? "reveal-list" : "hide-list"}>
+            <div className="list-container">
+              <div className="element-container">
+                <label className="p-5 element-text">A</label>
+              </div>
+              <div className="element-container">
+                <label className="p-5 element-text">B</label>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </Link>
   );
 };
 

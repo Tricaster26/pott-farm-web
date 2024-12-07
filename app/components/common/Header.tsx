@@ -2,14 +2,14 @@
 
 import "./header.scss";
 
-import DropdownList from "./DropdownList";
-import Title from "./title";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineForum } from "react-icons/md";
 import { MdLiveTv } from "react-icons/md";
 import { BsInfoCircle } from "react-icons/bs";
 import { FC } from "react";
 import Link from "next/link";
+import Title from "../title";
+import DropdownList from "../DropdownList";
 
 const Header: FC = () => {
   return (

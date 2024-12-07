@@ -27,7 +27,9 @@
 
   .logo-container {
     min-width: 70px;
-    min-height: 70px;
+    width: 70px;
+    height: 70px;
+    max-height: 70px;
     border-radius: 100%;
     border-width: 3px;
     border-color: white;

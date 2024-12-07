@@ -1,13 +1,10 @@
 import "./app.css";
 
 import AnimatedContainer from "./components/QuoteBox";
-import Header from "./components/Header";
 
 const Home = () => {
   return (
     <div className="main-page">
-      <Header />
-
       <AnimatedContainer>
         <p className="quote-text">
           In the beginning was nothing at all, then nothingness plus infinity,
