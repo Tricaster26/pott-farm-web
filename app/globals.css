@@ -23,3 +23,11 @@ body {
   background-clip: content-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.tangerine {
+  font-family: var(--font--tangerine);
+}
+
+.charm {
+  font-family: var(--font--charm);
+}

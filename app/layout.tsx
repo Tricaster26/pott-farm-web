@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Charm, Tangerine } from "next/font/google";
 import Header from "./components/common/Header";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const tangerine = Tangerine({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font--tangerine",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const charm = Charm({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font--charm",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${tangerine.variable} ${charm.variable}`}>
         <Header />
         {children}
       </body>
