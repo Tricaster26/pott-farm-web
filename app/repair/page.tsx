@@ -1,5 +1,5 @@
 import AnimatedContainer from "../components/QuoteBox";
-import "./about.css";
+import "./repair.css";
 
 const Repair = () => {
   return (

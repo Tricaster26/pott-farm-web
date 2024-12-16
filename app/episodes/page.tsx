@@ -1,5 +1,5 @@
 import AnimatedContainer from "../components/QuoteBox";
-import "./about.css";
+import "./episodes.css";
 
 const Episodes = () => {
   return (

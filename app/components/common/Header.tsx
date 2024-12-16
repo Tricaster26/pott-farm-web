@@ -31,14 +31,14 @@ const Header: FC = () => {
 
       <div className="other-links-wrapper">
         <DropdownList
-          link="repair"
-          isSelected={selectedTab === "repair"}
-          onClick={() => setSelectedTab("repair")}
+          link="episodes"
+          isSelected={selectedTab === "episodes"}
+          onClick={() => setSelectedTab("episodes")}
         >
           <div className="pb-1">
-            <FaWrench />
+            <MdLiveTv size={25} />
           </div>
-          <label className="title-text">Repair</label>
+          <label className="title-text">Episodes</label>
         </DropdownList>
 
         <DropdownList
@@ -52,14 +52,14 @@ const Header: FC = () => {
         </DropdownList>
 
         <DropdownList
-          link="episodes"
-          isSelected={selectedTab === "episodes"}
-          onClick={() => setSelectedTab("episodes")}
+          link="repair"
+          isSelected={selectedTab === "repair"}
+          onClick={() => setSelectedTab("repair")}
         >
           <div className="pb-1">
-            <MdLiveTv size={25} />
+            <FaWrench />
           </div>
-          <label className="title-text">Episodes</label>
+          <label className="title-text">Repair</label>
         </DropdownList>
 
         <DropdownList
