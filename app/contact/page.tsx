@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="about-page-wrapper">
       <AnimatedContainer customClass="animated-class">
-        <h2 className="text-[100px]">contact</h2>
+        <h2 className="text-[100px]">Contact</h2>
       </AnimatedContainer>
     </div>
   );
