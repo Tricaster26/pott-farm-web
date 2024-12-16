@@ -5,7 +5,7 @@ import AnimatedContainer from "./components/QuoteBox";
 const Home = () => {
   return (
     <div className="main-page">
-      <AnimatedContainer>
+      <AnimatedContainer customClass="animated-main-text">
         <p className="quote-text charm">
           In the beginning was nothing at all, then nothingness plus infinity,
           statistically, made something! A flash dilated into time, now here we

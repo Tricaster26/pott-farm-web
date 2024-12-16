@@ -2,16 +2,15 @@
 
 import "./header.scss";
 
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaWrench } from "react-icons/fa";
 import { MdOutlineForum } from "react-icons/md";
 import { MdLiveTv } from "react-icons/md";
-import { BsInfoCircle } from "react-icons/bs";
 import { FC, useState } from "react";
 import Link from "next/link";
 import Title from "../title";
 import DropdownList from "../DropdownList";
 
-type Tabs = "home" | "about" | "contact" | "forum" | "episodes";
+type Tabs = "home" | "repair" | "contact" | "forum" | "episodes";
 
 const Header: FC = () => {
   const [selectedTab, setSelectedTab] = useState<Tabs>("home");
@@ -32,14 +31,14 @@ const Header: FC = () => {
 
       <div className="other-links-wrapper">
         <DropdownList
-          link="about"
-          isSelected={selectedTab === "about"}
-          onClick={() => setSelectedTab("about")}
+          link="repair"
+          isSelected={selectedTab === "repair"}
+          onClick={() => setSelectedTab("repair")}
         >
           <div className="pb-1">
-            <BsInfoCircle />
+            <FaWrench />
           </div>
-          <label className="title-text">About</label>
+          <label className="title-text">Repair</label>
         </DropdownList>
 
         <DropdownList

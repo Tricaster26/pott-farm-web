@@ -1,14 +1,14 @@
 import AnimatedContainer from "../components/QuoteBox";
 import "./about.css";
 
-const About = () => {
+const Repair = () => {
   return (
     <div className="about-page-wrapper">
       <AnimatedContainer customClass="animated-class">
-        <h2 className="text-[100px]">About</h2>
+        <h2 className="text-[100px]">Repair</h2>
       </AnimatedContainer>
     </div>
   );
 };
 
-export default About;
+export default Repair;

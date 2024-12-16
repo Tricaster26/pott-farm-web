@@ -1,5 +1,4 @@
 .quote-container {
-  max-width: 580px;
   width: 100%;
   margin-top: 200px;
   color: rgb(255, 255, 255);
@@ -10,14 +9,26 @@
   padding-right: 10px;
 }
 
-.hide-quote {
+.hide-height {
   max-height: 0;
   opacity: 0;
-  transition: max-height 5s, opacity 2s;
+  transition: max-height 5, opacity 2s;
 }
 
-.show-quote {
+.show-height {
   max-height: 100%;
   opacity: 1;
   transition: max-height 5s, opacity 2s;
+}
+
+.show-width {
+  max-width: 100%;
+  opacity: 1;
+  transition: max-width 1s, opacity 0.5s;
+}
+
+.hide-width {
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 1s, opacity 0.5s;
 }
