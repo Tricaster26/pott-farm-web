@@ -31,3 +31,7 @@ body {
 .charm {
   font-family: var(--font--charm);
 }
+
+.newsreader {
+  font-family: var(--font--newsreader);
+}
