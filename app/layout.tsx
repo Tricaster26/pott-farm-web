@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import { Charm, Newsreader, Roboto, Tangerine } from "next/font/google";
+import { Charm, Newsreader, Tangerine } from "next/font/google";
 import Header from "./components/common/Header";
 
 const tangerine = Tangerine({
@@ -16,7 +15,7 @@ const charm = Charm({
   variable: "--font--charm",
 });
 
-const roboto = Newsreader({
+const newsReader = Newsreader({
   subsets: ["latin"],
   weight: ["300", "400"],
   variable: "--font--newsreader",
@@ -35,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${tangerine.variable} ${charm.variable} ${roboto.variable}`}
+        className={`${tangerine.variable} ${charm.variable} ${newsReader.variable}`}
       >
         <Header />
         {children}
